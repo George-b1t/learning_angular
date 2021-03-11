@@ -1,0 +1,53 @@
+#field-content
+  width: 100%
+  height: 570px
+  display: flex
+  justify-content: center
+  align-items: center
+
+  #app-content
+    height: 380px
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    svg
+      width: 100px
+      height: 100px
+      animation: advance_svg 2s infinite alternate ease
+
+    @keyframes advance_svg
+      0%
+        transform: translateX(40%)
+      100%
+        transform: translateX(-40%)
+
+    #input-car-name
+      width: 200px
+      padding: 6px 8px
+      font-size: 18px
+      border-radius: 10px
+      margin-bottom: 20px
+
+    #unpair-button
+      width: 200px
+      display: flex
+      justify-content: space-between
+
+      button
+        width: 90px
+        height: 36px
+        font-size: 18px
+        margin-bottom: 20px
+        background-color: #ffffff
+        border-radius: 5px
+        cursor: pointer
+        transition: 300ms
+
+        &:hover
+          transform: scale(1.05)
+          box-shadow: 0 0 6px #ffffff
+
+    li
+      color: #fff
+      font-size: 18px
